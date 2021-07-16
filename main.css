@@ -24,11 +24,13 @@ h1, h2, h3, h4, h5, p {
 }
 
 .main-page-wrapper {
-  background: url("./img/1.png") center top no-repeat, 
-  url("./img/2.png") right bottom no-repeat ;
+ 
+  background:url("./img/1.png") center top no-repeat,  
+  url("./img/2.png") right -100px bottom 113px no-repeat ; 
+  background-color:#001821;
 }
 .wrapper {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
 }
 
@@ -40,6 +42,7 @@ h1, h2, h3, h4, h5, p {
 
 
 body { 
+
   font-family: "Open Sans", Helvetica, sans-serif;
   color: #fff;
   font-size: 16px;
@@ -47,6 +50,7 @@ body {
   background: #29292c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height:100%;
 }
 
 ul {

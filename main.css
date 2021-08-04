@@ -94,7 +94,7 @@ ul {
 }
 
 
-.contacts__info {
+.contacts__dropdown-link {
   display: block;
 }
 
@@ -129,12 +129,70 @@ ul {
 
 }
 
-.contacts__info {
+.contacts__dropdown-link {
   font-size: 13px;
   text-decoration: underline;
   color:#fff;
+}
+
+.contacts__dropdown {
+  position: relative;
 
 }
+
+.contacts__dropdown:hover .contacts__dropdown-menu{
+  left: 0;
+  opacity: 1;
+}
+
+.contacts__dropdown-menu {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 33px;
+  background: #EDEDED;
+  border-radius: 4px;
+  padding: 16px;
+  width: 160px;
+  height: 66px;
+  top: 100%;
+  opacity: 0;
+  transition: opacity .7s;
+  left: -9999px;
+}
+
+.contacts__dropdown-menu::before, .contacts__dropdown-menu::after {
+  content: ''; 
+  position: absolute;
+  left: 96px; bottom: -20px;
+  border: 10px solid transparent;
+ }
+ .contacts__dropdown-menu::after {
+  border-bottom: 10px solid #EDEDED;
+  bottom: 65px;
+ }
+.contacts__dropdown-menu:before {
+  content: "";
+  display: block;
+  height: 300px;
+  left: 0;
+  right: 0;
+  top: -29px;
+  position: absolute;
+}
+
+.contacts__dropdown-item--up {
+ color: #1E1F20 ;
+ font-weight: bold;
+ font-size: 13px;
+ margin-right: -4px;
+ margin-bottom: 2px;
+}
+
+.contacts__dropdown-item--down {
+  font-size: 13px;
+  color: #1E1F20;
+}
+
 .hello__container {
   width: 40%;
   margin-left: 196px;
@@ -661,6 +719,7 @@ margin-bottom: 70px;
 }
 .reviews__item {
   margin-bottom: 20px;
+  margin-right: 27px;
 }
 
 .review {
@@ -709,6 +768,10 @@ margin-bottom: 70px;
 
 .tag--bg--green{
   background: #B9EAE4;
+}
+
+.review__photo {
+  margin-right: 22px;
 }
 
 .review__title {
